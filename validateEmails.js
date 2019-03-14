@@ -5,6 +5,14 @@
  *
  * @param String - Email address strings, comma seperated
  *
+ * How to use:
+ *
+ * 1. Import the module at top of file:
+ * import addClass from '../utils/addClass.js';
+ *
+ * 3. Call it:
+ * let emailErrors = validateEmails(values || '');
+ *
  */
 
 const re = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; // validate email regex

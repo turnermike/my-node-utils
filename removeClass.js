@@ -6,6 +6,16 @@
  * @param Array - HTML elements
  * @param String - The class name.
  *
+ * How to use:
+ * 1. Import the module at top of file:
+ * import addClass from '../utils/removeClassClass.js';
+ *
+ * 2. Create instance of element to add class to:
+ * let bodyEl = document.getElementsByTagName('body')[0];
+ *
+ * 3. Add class to element:
+ * removeClass(bodyEl, 'small');
+ *
  */
 export default (elements, myClass) => {
 
