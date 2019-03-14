@@ -1,7 +1,7 @@
 /**
  * removeClass.js
  *
- * Removes css class names from elements.
+ * Removes a css class name from elements.
  *
  * @param Array - HTML elements
  * @param String - The class name.

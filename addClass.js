@@ -1,7 +1,7 @@
 /**
  * addClass.js
  *
- * Adds a css class names to HTML elements.
+ * Adds a css class name to HTML elements.
  *
  * @param Array - HTML elements
  * @param String - The class name.

@@ -13,6 +13,35 @@
  *              - resolve() will return HTMLCollection of elements
  *              - reject() will return an error
  *
+ * How to use:
+ * 1. Import the module at top of file:
+ *
+ * import domElementsHaveLoaded from '../utils/domElementsHaveLoaded.js';
+ *
+ * 2. Call the module using async and use the elements within the Array.from method.
+ *
+ * async function checkForAvailableItems(selector) {
+ *
+ *   var result = domElementsHaveLoaded(selector);                         // returns a promise
+ *
+ *   result.then(function(data) {                                          // success
+ *
+ *     Array.from(data).forEach(function(item) {                           // loop each item returned
+ *
+ *       // do stuff with item
+ *
+ *     });
+ *
+ *   }).catch(function(err){                                               // eror
+ *
+ *     console.log('Error: ', err);
+ *
+ *   })
+ *
+ * }
+ *
+ * checkForAvailableItems('vc_grid-item-mini');
+ *
  */
 export default (selector, interval = 100, maxDurration = 10000) => {
 
